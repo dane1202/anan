@@ -1,0 +1,79 @@
+html, body {
+    font-family: arial;
+    height: 100%;
+    margin: 0 0;
+}
+
+div.block1 {
+    height: 100%;
+    background-image: url('../img/badguy.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color:black;
+}
+
+div.block2 {
+    height: 100%;
+    background-image: url('../img/goodguy.png');
+    background-color: brown;
+    color:white;
+}
+
+div.block3 {
+    height: 100%;
+    background-image: url('../img/coolguy.png');
+    background-color: green;
+    color:white;
+}
+
+footer {
+    height: 10%;
+    background-color: rgb(160, 160, 160);
+    color:black;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+  
+ul.topnav li {
+    float: left;
+}
+  
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.topnav li a:hover:not(.active) {
+    background-color: rgb(226, 50, 89);
+}
+
+ul.topnav li a.active {
+    background-color: #d16f9d;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
